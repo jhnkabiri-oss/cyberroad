@@ -1,0 +1,21 @@
+# Git - ignore file besar dan temp
+*.bak
+*.log
+output/
+icon_work/*.bin
+icon_work/bundle_extracted.js
+
+# Ignore original installer (91MB terlalu besar untuk GitHub)
+panda_v8.337.exe
+
+# Ignore Panda original (sudah ada versi patched)
+extracted/app/touping.exe
+extracted/app/touping_patched.exe
+extracted/app/touping.exe.bak
+extracted/app/touping_cyberroad.exe
+
+# Keep hanya CyberRoad.exe (yang sudah dipatch)
+!extracted/app/CyberRoad.exe
+
+# macOS
+.DS_Store
