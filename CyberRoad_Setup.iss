@@ -44,8 +44,9 @@ UninstallDisplayName={#MyAppName} v{#MyAppVersion}
 CreateUninstallRegKey=yes
 
 ; == UI ==
-WizardImageFile=compiler:WizModernImage-IS.bmp
-WizardSmallImageFile=compiler:WizModernSmallImage-IS.bmp
+; WizardImageFile=compiler:WizModernImage-IS.bmp
+; WizardSmallImageFile=compiler:WizModernSmallImage-IS.bmp
+
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
