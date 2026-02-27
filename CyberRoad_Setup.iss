@@ -28,7 +28,7 @@ DefaultDirName={autopf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 OutputDir=..\output
 OutputBaseFilename=CyberRoad_v{#MyAppVersion}_Setup
-SetupIconFile=app\icon.ico
+SetupIconFile=extracted\app\icon.ico
 
 ; == Options ==
 Compression=lzma2/ultra64
@@ -57,42 +57,42 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 
 [Files]
 ; == Main executable ==
-Source: "app\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 
 ; == Core DLLs ==
-Source: "app\WebView2Loader.dll";   DestDir: "{app}"; Flags: ignoreversion
-Source: "app\avcodec-60.dll";       DestDir: "{app}"; Flags: ignoreversion
-Source: "app\avdevice-60.dll";      DestDir: "{app}"; Flags: ignoreversion
-Source: "app\avfilter-9.dll";       DestDir: "{app}"; Flags: ignoreversion
-Source: "app\avformat-60.dll";      DestDir: "{app}"; Flags: ignoreversion
-Source: "app\avutil-58.dll";        DestDir: "{app}"; Flags: ignoreversion
-Source: "app\postproc-57.dll";      DestDir: "{app}"; Flags: ignoreversion
-Source: "app\swresample-4.dll";     DestDir: "{app}"; Flags: ignoreversion
-Source: "app\swscale-7.dll";        DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\WebView2Loader.dll";   DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\avcodec-60.dll";       DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\avdevice-60.dll";      DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\avfilter-9.dll";       DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\avformat-60.dll";      DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\avutil-58.dll";        DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\postproc-57.dll";      DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\swresample-4.dll";     DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\swscale-7.dll";        DestDir: "{app}"; Flags: ignoreversion
 
 ; == Bridge & Updater ==
-Source: "app\bridge.exe";           DestDir: "{app}"; Flags: ignoreversion
-Source: "app\sys_config.toml";      DestDir: "{app}"; Flags: ignoreversion
-Source: "app\icon.ico";             DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\bridge.exe";           DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\sys_config.toml";      DestDir: "{app}"; Flags: ignoreversion
+Source: "extracted\app\icon.ico";             DestDir: "{app}"; Flags: ignoreversion
 
 ; == WebView2 Installer (run if not installed) ==
-Source: "app\WebView2Installer.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall
+Source: "extracted\app\WebView2Installer.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall
 
 ; == Tools ==
-Source: "app\tools\adb.exe";             DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\AdbWinApi.dll";       DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\AdbWinUsbApi.dll";    DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\assistant.apk";       DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\hidmanager.apk";      DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\XWKeyboard.apk";      DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\client-updater.exe";  DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\updater.exe";         DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\dpinst64.exe";        DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\dpinst.xml";          DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\dpscat.exe";          DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\wdi-simple.exe";      DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\XWCaptureScreen";     DestDir: "{app}\tools"; Flags: ignoreversion
-Source: "app\tools\util";               DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\adb.exe";             DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\AdbWinApi.dll";       DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\AdbWinUsbApi.dll";    DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\assistant.apk";       DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\hidmanager.apk";      DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\XWKeyboard.apk";      DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\client-updater.exe";  DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\updater.exe";         DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\dpinst64.exe";        DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\dpinst.xml";          DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\dpscat.exe";          DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\wdi-simple.exe";      DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\XWCaptureScreen";     DestDir: "{app}\tools"; Flags: ignoreversion
+Source: "extracted\app\tools\util";                DestDir: "{app}\tools"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\{#MyAppName}";          Filename: "{app}\{#MyAppExeName}";   IconFilename: "{app}\icon.ico"
