@@ -26,7 +26,7 @@ AppUpdatesURL={#MyAppURL}
 ; == Paths ==
 DefaultDirName={autopf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-OutputDir=..\output
+OutputDir=output
 OutputBaseFilename=CyberRoad_v{#MyAppVersion}_Setup
 SetupIconFile=extracted\app\icon.ico
 
